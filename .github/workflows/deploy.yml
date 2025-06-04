@@ -10,12 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - uses: actions/checkout@v3
-      - name: Install 
-         run: npm install
+      - uses: actions/checkout@v4
+
+      - name: Install
+        run: npm install
+
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_WORKERS }}
-        env:
-          NODE_OPTIONS: "--trace-warnings"
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
