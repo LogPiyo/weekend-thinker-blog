@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install 
-+       run: npm install
+         run: npm install
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
