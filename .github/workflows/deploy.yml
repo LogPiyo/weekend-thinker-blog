@@ -15,3 +15,5 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_WORKERS }}
+        env:
+          NODE_OPTIONS: "--trace-warnings"
