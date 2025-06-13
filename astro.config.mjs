@@ -15,10 +15,10 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [
-      // [
+      [
         rehypeKatex,
-        // {output: 'mathml'}
-      // ],
+        {output: 'mathml'}
+      ],
     ]
   },
 });
