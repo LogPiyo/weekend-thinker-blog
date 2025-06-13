@@ -1,3 +1,17 @@
+# このレポジトリについて / About this repository
+これは私（[@LogPiyo](https://github.com/LogPiyo)）が運営するブログのソースです。
+
+GitHub Actionsを無料で使用するためにpublicリポジトリにしていますが，**このレポジトリに関するいかなる著作権も放棄していません**。無断転載などはご遠慮ください。
+
+このブログではAstro公式のブログテンプレートを使用しています。Webサイトを生成する際には以下のドキュメントを参照してください。
+
+This is the source code of the blog maintained by me (@LogPiyo).
+
+The repository is public in order to use GitHub Actions for free, but **no copyrights regarding this repository have been waived**. Please refrain from unauthorized reproduction or redistribution.
+
+This blog uses the official blog template provided by Astro.
+Please refer to the following documentation when building the website.
+
 # Astro Starter Kit: Blog
 
 ```sh
