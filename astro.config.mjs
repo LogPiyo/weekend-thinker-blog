@@ -15,6 +15,18 @@ export default defineConfig({
     starlight({
       title: SITE_TITLE,
       logo: { src: '/public/myFavicon.svg', alt: SITE_TITLE + 'の画像' },
+      head: [
+        {
+          tag: 'meta',
+          attrs: {
+            name: 'google-adsense-account',
+            content: 'ca-pub-2425715237518287',
+          },
+        },
+      ],
+      components: {
+        Head: './src/components/Head.astro',
+      }
     }),
     sitemap(), 
     mdx(), 
