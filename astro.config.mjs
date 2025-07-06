@@ -31,6 +31,12 @@ export default defineConfig({
       ],
       components: {
         Head: './src/components/Head.astro',
+      },
+      locales: {
+        root: {
+          label: '日本語',
+          lang: 'ja',
+        }
       }
     }),
     sitemap(), 
