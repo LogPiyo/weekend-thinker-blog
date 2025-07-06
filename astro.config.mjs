@@ -14,6 +14,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: SITE_TITLE,
+      favicon: 'fa  vicon.ico',
       logo: { src: '/public/myFavicon.svg', alt: SITE_TITLE + 'の画像' },
       social: [
         { icon: 'github', label: 'github', href: 'https://github.com/LogPiyo'},
