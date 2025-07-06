@@ -15,7 +15,7 @@ export default defineConfig({
     starlight({
       title: SITE_TITLE,
       favicon: 'favicon.ico',
-      logo: { src: '/public/myFavicon.svg', alt: SITE_TITLE + 'の画像' },
+      logo: { src: './src/assets/logo.svg', alt: SITE_TITLE + 'の画像' },
       social: [
         { icon: 'github', label: 'github', href: 'https://github.com/LogPiyo'},
         { icon: 'x.com', label: 'x', href: 'https://x.com/LogPiyoo'},
