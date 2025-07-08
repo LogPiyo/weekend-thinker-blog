@@ -20,6 +20,35 @@ export default defineConfig({
         { icon: 'github', label: 'github', href: 'https://github.com/LogPiyo'},
         { icon: 'x.com', label: 'x', href: 'https://x.com/LogPiyoo'},
       ],
+      sidebar: [
+        {
+          label: 'コンピュータサイエンス',
+          items: [
+            'blog/1',
+            'blog/2',
+            'blog/5',
+            'blog/10',
+            'blog/11',
+            'blog/12',
+          ],
+        },
+        {
+          label: '物理学・数学',
+          items: [
+            'blog/3',
+            'blog/4',
+            'blog/7',
+          ],
+        },
+        {
+          label: '雑記',
+          items: [
+            'blog/6',
+            'blog/8',
+            'blog/9',
+          ],
+        },
+      ],
       head: [
         {
           tag: 'meta',
