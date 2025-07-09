@@ -5,7 +5,6 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import cloudflare from '@astrojs/cloudflare';
 import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
@@ -73,7 +72,6 @@ export default defineConfig({
     sitemap(), 
     mdx(), 
   ],
-  adapter: cloudflare(),
   markdown: {
     remarkPlugins: [remarkMath],
     rehypePlugins: [
