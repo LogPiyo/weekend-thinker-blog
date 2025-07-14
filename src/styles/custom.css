@@ -1,0 +1,7 @@
+:root[data-theme='dark'] {
+    --sl-color-text: white;
+}
+
+:root[data-theme='light'] {
+    --sl-color-text: black;
+}
