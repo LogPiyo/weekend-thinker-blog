@@ -6,7 +6,9 @@ heroImage: ''
 tags: ['プログラミング', 'Python']
 sidebar:
   badge: 'Python'
+
 ---
+import { LinkButton } from '@astrojs/starlight/components';
 
 ## スクリプト作成の動機
 以前Notionで日々の記録を書いていたのですが，ObsidianのDaily Notesにすべて統合することにしました。
@@ -18,6 +20,15 @@ sidebar:
 ## スクリプトの内容
 以下のようなPythonスクリプトを作成しました。
 スクリプトは[GitHub](https://github.com/LogPiyo/rename-dynalist-to-obsidian-dailynote)にもアップロードしています。
+
+<LinkButton
+  href="https://github.com/LogPiyo/rename-dynalist-to-obsidian-dailynote"
+  variant="secondary"
+  icon="github"
+  iconPlacement="start"
+>
+  rename-dynalist-to-obsidian-dailynote
+</LinkButton>
 
 ```python
 import os
