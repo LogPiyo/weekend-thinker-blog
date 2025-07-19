@@ -30,6 +30,7 @@ export default defineConfig({
             'blog/11',
             'blog/12',
             'blog/13',
+            'blog/14',
             'blog/15',
           ],
         },
@@ -58,6 +59,15 @@ export default defineConfig({
             content: 'ca-pub-2425715237518287',
           },
         },
+        {
+          tag: 'link',
+          attrs: {
+            rel: 'stylesheet',
+            href: 'https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css',
+            integrity: 'sha384-vZTGshhcJwVjMEcoCsoDhbLMegZbDrg6eRmFwhl/8tSru3CTb5EgGF9aFLPeANtO',
+            crossorigin: 'anonymous',
+          }
+        }
       ],
       customCss: [
         './src/styles/custom.css',
