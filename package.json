@@ -19,6 +19,7 @@
     "remark-math": "^6.0.0"
   },
   "devDependencies": {
+    "@astrojs/partytown": "^2.1.4",
     "wrangler": "^4.19.1"
   }
 }

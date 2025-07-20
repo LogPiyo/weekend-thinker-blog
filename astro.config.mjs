@@ -6,6 +6,7 @@ import rehypeKatex from 'rehype-katex';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
+import partytown from '@astrojs/partytown';
 
 // https://astro.build/config
 export default defineConfig({
@@ -79,6 +80,11 @@ export default defineConfig({
     }),
     sitemap(), 
     mdx(), 
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      }
+    }),
   ],
   markdown: {
     remarkPlugins: [remarkMath],
