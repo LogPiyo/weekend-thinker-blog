@@ -54,13 +54,6 @@ export default defineConfig({
       ],
       head: [
         {
-          tag: 'meta',
-          attrs: {
-            name: 'google-adsense-account',
-            content: 'ca-pub-2425715237518287',
-          },
-        },
-        {
           tag: 'link',
           attrs: {
             rel: 'stylesheet',
