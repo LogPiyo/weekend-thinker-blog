@@ -37,6 +37,7 @@ export default defineConfig({
             'blog/17',
             'blog/18',
             'blog/20',
+            'blog/21',
           ],
         },
         {
