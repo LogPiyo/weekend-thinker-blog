@@ -50,6 +50,7 @@ export default defineConfig({
         },
         {
           label: '雑記',
+          collapsed: true,
           items: [
             'blog/6',
             'blog/8',
