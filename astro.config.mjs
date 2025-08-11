@@ -23,16 +23,42 @@ export default defineConfig({
       sidebar: [
         {
           label: 'コンピュータサイエンス',
-          autogenerate: {directory: '/blog/computer'},
+          items: [
+            'blog/1',
+            'blog/2',
+            'blog/5',
+            'blog/10',
+            'blog/11',
+            'blog/12',
+            'blog/13',
+            'blog/14',
+            'blog/15',
+            'blog/16',
+            'blog/17',
+            'blog/18',
+            'blog/20',
+            'blog/21',
+            'blog/22',
+            'blog/23',
+          ],
         },
         {
           label: '物理学・数学',
-          autogenerate: {directory: '/blog/physics'},
+          items: [
+            'blog/3',
+            'blog/4',
+            'blog/7',
+          ],
         },
         {
           label: '雑記',
-          autogenerate: {directory: '/blog/misc'},
           collapsed: true,
+          items: [
+            'blog/6',
+            'blog/8',
+            'blog/9',
+            'blog/19',
+          ],
         },
       ],
       head: [
