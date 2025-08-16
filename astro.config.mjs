@@ -7,6 +7,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import starlight from '@astrojs/starlight';
 import partytown from '@astrojs/partytown';
+import rehypeMermaid from 'rehype-mermaid';
 
 // https://astro.build/config
 export default defineConfig({
@@ -69,12 +70,16 @@ export default defineConfig({
     }),
   ],
   markdown: {
+    syntaxHighlight: {
+      excludeLangs: ['mermaid'],
+    },
     remarkPlugins: [remarkMath],
     rehypePlugins: [
       [
         rehypeKatex,
         {output: 'mathml'}
       ],
+      rehypeMermaid,
     ]
   },
 });
