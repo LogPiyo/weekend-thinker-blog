@@ -10,20 +10,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.1",
+    "@astrojs/mdx": "^4.3.4",
     "@astrojs/rss": "^4.0.12",
-    "@astrojs/sitemap": "^3.4.1",
-    "@astrojs/starlight": "^0.35.1",
+    "@astrojs/sitemap": "^3.5.0",
+    "@astrojs/starlight": "^0.35.2",
     "@playwright/test": "^1.54.2",
-    "astro": "^5.12.0",
+    "astro": "^5.13.2",
     "rehype-katex": "^7.0.1",
     "rehype-mermaid": "^3.0.0",
     "remark-math": "^6.0.0"
   },
   "devDependencies": {
     "@astrojs/partytown": "^2.1.4",
-    "npm-check-updates": "^18.0.1",
+    "npm-check-updates": "^18.0.2",
     "svgo": "^4.0.0",
-    "wrangler": "^4.25.0"
+    "wrangler": "^4.30.0"
   }
 }
