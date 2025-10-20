@@ -31,6 +31,10 @@ export default defineConfig({
           autogenerate: {directory: '/blog/physics'},
         },
         {
+          label: '論理学',
+          autogenerate: {directory: '/blog/logic'},
+        },
+        {
           label: '雑記',
           autogenerate: {directory: '/blog/misc'},
           collapsed: true,
