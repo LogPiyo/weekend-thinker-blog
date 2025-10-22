@@ -15,3 +15,13 @@ description: 'このブログ「Wekilo」の運営者、LogPiyoのプロフィ�
 将来は個人開発者として生計を立てることを目標にしています。
 
 どうぞよろしくお願いします。
+
+### 主な活動
+- GitHub: [logpiyo](https://github.com/logpiyo)
+  - このサイトのソースや，その他の個人プロジェクトを公開しています。
+- X: [@LogPiyoo](https://twitter.com/LogPiyoo)
+  - 日常で感じたことを投稿しています。あまり更新していません。
+- Youtubeチャンネル: [weekend-thinker music](https://www.youtube.com/@weekend-thinkermusic)
+  - 私の思想を曲にしたものから，作業用のBGMまで公開しています。
+- Open Street Map コントリビュータ: [logpiyo](https://www.openstreetmap.org/user/logpiyo)
+  - 主に自転車道の編集を行っています。
