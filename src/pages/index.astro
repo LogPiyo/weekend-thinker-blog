@@ -1,0 +1,219 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const channels = [
+  {
+    title: 'Essays / Note',
+    description: '日次で生まれる短編のアーカイブ。思考断片を連続的に公開。',
+    href: 'https://note.com/',
+    state: 'external',
+  },
+  {
+    title: 'Video / YouTube',
+    description: 'ストランド化した思考を映像で再構成。',
+    href: 'https://www.youtube.com/',
+    state: 'external',
+  },
+  {
+    title: 'Music',
+    description: '言語化できない層を音として抽出する実験ライン。',
+    href: '#',
+    state: 'coming-soon',
+  },
+  {
+    title: 'GitHub',
+    description: '知の構造化を支える実装・運用記録。',
+    href: 'https://github.com/LogPiyo',
+    state: 'external',
+  },
+  {
+    title: 'X / Notes',
+    description: '瞬間的な洞察・観測ログを高頻度で記録。',
+    href: 'https://x.com/LogPiyoo',
+    state: 'external',
+  },
+];
+
+const layers = [
+  {
+    name: 'Direct Layer',
+    ja: '直接層',
+    detail: '意識そのもの（クオリア、自己、主観性）。',
+  },
+  {
+    name: 'Indirect Layer',
+    ja: '間接層',
+    detail: '認識、言語、知識、モデル化。',
+  },
+  {
+    name: 'Extension Layer',
+    ja: '外延層',
+    detail: '物理、社会、文化、技術。',
+  },
+];
+---
+
+<BaseLayout>
+  <header class="hero container">
+    <p class="eyebrow">WEEKEND THINKER NEXUS / MOTHER BASE</p>
+    <h1>思考の進化過程を接続する HUB</h1>
+    <p>
+      このサイトは、断片 → 糸 → ストランドへと変化する知的生産活動を統合する中核ハブです。
+      コンテンツ生成は外部メディアで行い、ここでは索引・関係性・進化履歴を扱います。
+    </p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>MB Mission</h2>
+      <ul>
+        <li>WTNに属する複数メディアの横断接続</li>
+        <li>思考構造の可視化と追跡可能性の担保</li>
+        <li>発信成果ではなく進化プロセスそのものの外部化</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Hub Links</h2>
+      <div class="grid">
+        {channels.map((link) => (
+          <a class="card" href={link.href} target={link.state === 'external' ? '_blank' : undefined} rel="noreferrer">
+            <div>
+              <h3>{link.title}</h3>
+              <p>{link.description}</p>
+            </div>
+            <span class:list={{ tag: true, soon: link.state === 'coming-soon' }}>
+              {link.state === 'coming-soon' ? 'Coming Soon' : 'Open'}
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Consciousness-oriented Architecture</h2>
+      <p class="small">すべての学問は最終的に「意識とは何か」という問いへ収束する。</p>
+      <div class="layers">
+        {layers.map((layer) => (
+          <article>
+            <h3>{layer.name} <span>{layer.ja}</span></h3>
+            <p>{layer.detail}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© {new Date().getFullYear()} WTN Mother Base</p>
+  </footer>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 5rem 0 2.5rem;
+  }
+
+  .eyebrow {
+    color: var(--accent-2);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.2;
+    margin: 0.75rem 0 1rem;
+    max-width: 20ch;
+  }
+
+  .panel {
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: color-mix(in srgb, var(--surface) 90%, black);
+    backdrop-filter: blur(6px);
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .grid {
+    display: grid;
+    gap: 0.9rem;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1rem;
+    background: rgba(11, 15, 23, 0.75);
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    border-color: color-mix(in srgb, var(--accent) 70%, white);
+  }
+
+  .card h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1rem;
+  }
+
+  .card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .tag {
+    font-size: 0.78rem;
+    align-self: flex-start;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.2rem 0.6rem;
+    color: var(--accent-2);
+    white-space: nowrap;
+  }
+
+  .soon {
+    color: #ffd38a;
+  }
+
+  .layers {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .layers article {
+    border-left: 2px solid var(--accent);
+    padding-left: 0.8rem;
+  }
+
+  .layers h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .layers span {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-left: 0.3rem;
+  }
+
+  .small {
+    color: var(--muted);
+  }
+
+  .footer {
+    padding: 1.5rem 0 2rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
